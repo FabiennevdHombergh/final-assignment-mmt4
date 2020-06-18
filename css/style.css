@@ -1,0 +1,1685 @@
+
+:root {
+   --wit: #ffffff;
+   --blok-paars: #F4F2FF;
+   --donker-roze: #CC0085;
+   --wit-naar-blauw: #ffffff;
+   --roze-naar-blauw:#CC0085;
+   --roze-naar-lichtblauw: #CC0085;
+   --licht-roze: #FFAFE3;
+   --lichtroze-naar-wit:#FFAFE3;
+   --zwart: #000000;
+   --accordion-aan: #CC0085;
+   --accordion-uit: #F4F2FF;
+   --lichtroze-doorschijnend: rgb(255,175,227,0.5);
+   --donkerkleur-doorschijnend: rgb(204,0,133);
+   --pijl_dicht: url(../img/pijl_dicht@2x.png);
+   --pijl_open: url(../img/pijl@2x.png);
+   --pauze: url(../img/pauze@2x.png);
+   --play: url(../img/pauze-licht@2x.png);
+   --vooruit: url(../img/tofront@2x.png);
+   --achteruit: url(../img/goback@2x.png);
+}
+
+/* dark */
+
+[data-theme="dark"] {
+   --wit: #000000;
+   --wit-naar-blauw:#1D00FF;
+   --roze-naar-blauw:#1D00FF;
+   --blok-paars: #1D00FF;
+   --donker-roze: #ffffff;
+   --lichtroze-naar-wit:#ffffff;
+   --accordion-aan: #1D00FF;
+   --accordion-uit:#ffffff;
+   --licht-roze: #0076FF;
+   --zwart: #000000;
+   --roze-naar-lichtblauw: #0076FF;
+   --lichtroze-doorschijnend: rgb(0,118,255,0.5);
+   --donkerkleur-doorschijnend: rgb(29,0,255);
+   --pijl_dicht: url(../img/pijl_dicht_donker@2x.png);
+   --pijl_open: url(../img/pijl-donker@2x.png);
+   --pauze: url(../img/darkpauze@2x.png);
+   --play: url(../img/pauze-donker@2x.png);
+   --vooruit: url(../img/darktofront@2x.png);
+   --achteruit: url(../img/darkgoback@2x.png);
+}
+
+
+.clear{
+   clear: both;
+}
+
+/*navigatie*/
+
+nav {
+   height: 120px;
+   width: 75%;
+   border-radius: 20px;
+   background-color: var(--wit-naar-blauw);
+   margin-left: 15%;
+   margin-top: 190px;
+   z-index:10;
+   position: fixed;
+ }
+ 
+ ul {
+   margin-top: 20px;
+   text-align: center;
+   padding: 0;
+   margin-right: 15%;
+ }
+
+
+ li {
+   display: inline;
+   margin-left: 60px;
+   line-height: 100px;
+ }
+ 
+ a {
+   text-decoration: none;
+   text-align: center;
+   color: var( --donker-roze);
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+   font-size: 16px;
+ }
+a:hover, a:active {
+   text-decoration: underline;
+ }
+
+ #logo{
+   float: left;
+   margin-left: 100px;
+   margin-top: 36px;
+   
+}
+
+/*header*/
+ .header-img{
+   height:900px;
+   background: linear-gradient(var(--lichtroze-doorschijnend), var(--donkerkleur-doorschijnend)), url("../img/header@2x.jpeg"); 
+   background-size: cover;
+   /* margin: 0 auto; */
+   top:100px;
+   margin-top:-200px; 
+   width: 100%;
+}
+
+.titel{
+   position: relative;
+   font-family: 'Playfair Display', serif;
+   top: 400px;
+   font-size: 60px;
+   font-weight: bold;
+   color: #ffffff;
+   z-index: 1;
+   margin-left: 23%;
+}
+
+.inleiding{
+   max-width: 720px;
+   margin-top: 30px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 22px;
+   font-weight: bold;
+   padding-top: 20px;
+}
+
+/*blokken*/
+
+.plaatjes{
+   float: left;
+   z-index: 3; 
+}
+.img1{
+   background-color: var(--blok-paars);
+   width: 200px;
+   border: 2px  var(--blok-paars);
+   border-radius: 15px;
+   padding: 90px;
+   margin: 20px;
+   margin-left: 9%;
+   margin-top: -100px;
+   position: absolute;
+}
+.img2{
+   position: absolute;
+   background-color: var(--blok-paars);
+   width: 200px;
+   border: 2px  var(--blok-paars);
+   border-radius: 15px;
+   padding: 90px;
+   margin-left: 9%;
+   margin-left: 38%;
+   margin-top: -100px;
+}
+.img3{  
+   position: absolute;
+   background-color:var(--blok-paars);
+   width: 200px;
+   border: 2px  var(--blok-paars);
+   border-radius: 15px;
+   padding: 90px;
+   margin: 20px;
+   margin-left: 67%;
+   margin-top: -100px;
+
+}
+.teksten{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 22px;
+   font-weight: bold;
+   color: var( --donker-roze);
+   position: relative;
+   z-index: 4;
+
+}
+.tekstblok1{
+   margin-top: 185px;
+   margin-left: 20%;
+}
+.tekstblok2{
+   margin-top: -25px;
+   margin-left: 48%;
+}
+.tekstblok3{
+   margin-top: -25px;
+   margin-left: 78%;
+}
+
+
+/*accordion*/
+.Playlist{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+   font-weight: bold;
+   color: var( --donker-roze);
+   margin-top: 100px;
+   margin-left: 300px;
+}
+
+ 
+
+.btn {
+   margin-top: 18%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   z-index: 6;
+   position: absolute;
+   background-image: var(--pauze);
+   background-repeat: no-repeat;
+   width: 100px;
+   height: 100px;
+   opacity: 0;
+   transition: .5s ease;
+    }
+
+ .achteruit{
+   margin-top: 15.5%;
+   left: calc(50% - 150px);
+   z-index: 4;
+   position: absolute;
+   background-image: var(--achteruit);
+   background-repeat: no-repeat;
+   width: 100px;
+   height: 100px;
+   opacity: 0;
+   transition: .5s ease;
+}
+
+ .vooruit{
+   margin-top: 15.5%;
+   left: calc(50% + 60px);
+   z-index: 4;
+   position: absolute;
+   background-image: var(--vooruit);
+   background-repeat: no-repeat;
+   width: 100px;
+   height: 100px;
+   opacity: 0;
+   transition: .5s ease;
+}
+
+
+#accordion{
+   padding: 50px 50px 100px;
+   stroke: 1px solid var( --zwart);
+   max-width: 100%;
+   margin-left: 250px;
+
+}
+
+#accordion h3{
+   font-family: 'Montserrat', sans-serif;
+   font-size:18px ;
+   font-weight: bold;
+   border-style: solid ;
+   width: 80%;
+   padding-left: 78px;
+   line-height: 70px;
+}
+#accordion p{
+   font-family: 'Montserrat', sans-serif;
+   font-size:18px ;
+   font-weight: bold;
+   margin-left: 30px;
+   line-height: 70px;
+   position: absolute;
+   z-index: 5;
+   color: white;
+}
+.text{
+   font-family: 'Montserrat', sans-serif;
+   font-size:18px ;
+   color: #ffffff;
+   font-weight: bold;
+   border-style: solid ;
+   width: 1213px;
+   padding-left: 104px;
+   line-height: 70px;
+   z-index: 3;
+}
+ 
+.ui-accordion-header{
+   border: 2px solid var(--accordion-uit);
+   color: var( --lichtroze-naar-wit);
+   height: 70px;
+   padding-left: 100px;;
+   background-image: var(--pijl_dicht);
+   background-size: 50px;
+   background-position: 20px 10px;
+   background-repeat: no-repeat;
+}
+.ui-accordion-header-active {
+   border: 2px solid var(--accordion-aan);
+   color: var( --donker-roze);
+   height: 70px;
+   padding-left: 100px;
+   background-image: var(--pijl_open);
+   background-size: 50px;
+   background-position: 20px 10px;
+   background-repeat: no-repeat;
+}
+.geklikt #accordion .ui-accordion-content .btn{
+   background-image: var(--play);
+   background-repeat: no-repeat;
+
+}
+
+.video:hover .btn {
+   opacity: 1;
+ }
+
+ .video:hover .achteruit{
+   opacity: 1;
+ }
+ 
+ .video:hover .vooruit{
+   opacity: 1;
+ }
+ .video-js{
+   width:87.5%;
+   height:600px;
+   position: relative;
+ } 
+
+
+
+input[type=checkbox] {
+   visibility: hidden;
+}
+
+/* switcher */
+
+.switcher {
+   transform: scale(-1, 1);
+   width: 85px;
+   height: 40px;
+   background-color: var( --lichtroze-naar-wit);
+   float: right;
+   border-radius: 25px;
+   margin-top: 30px;
+}
+
+.switcher:before {
+   content: url(../img/moon@2x.png);
+   position: absolute;
+   top: 6px;
+   left: 8px;
+}
+.switcher:after {
+   content: url(../img/sun@2x.png);
+   position: absolute;
+   top: 6px;
+   left: 44px;
+}
+
+.switcher label {
+   width: 32px;
+   height: 32px;
+   position: absolute;
+   top: 4px;
+   z-index: 1;
+   background:var(--wit-naar-blauw);
+   border-radius: 25px;
+   margin-left: 5px;
+}
+
+.switcher input[type=checkbox]:checked+label {
+   margin-left: 3px;
+   left: 40px;
+}
+
+#switch{
+   position: absolute;
+   top: 6%;
+   left: 80%;
+   transform: translate(-50%,-50%);
+   z-index: 17;
+   position: fixed;
+}
+
+/*body*/
+
+body{
+   background-color: var(--wit);
+
+}
+
+
+/*studententekst*/
+
+.teksten2{
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+   color: var( --donker-roze);
+   margin-left: 17%;
+}
+.support{
+   font-size: 18px;
+
+}
+
+.studentstext{
+   font-size: 20px;
+   margin-top: 30px;
+   margin-bottom: 50px;
+   max-width: 600px;
+   float: left;
+
+}
+#contactbalk{
+   font-family: 'Montserrat', sans-serif;
+   font-size:22px ;
+   color: #ffffff;
+   font-weight: bold;
+   margin-left: 140px;
+   margin-top: 10px;
+   background-color: var( --roze-naar-blauw);
+   padding: 25px 70px;
+   border-radius: 15px;
+   border: none;
+}
+
+
+
+.persoonblok1{
+margin-left: 200px;
+float: left;
+margin-top: -200px;
+background-color: var(--blok-paars);
+width: 200px;
+border: 2px  var(--blok-paars);
+border-radius: 15px;
+padding: 13px 120px;
+}
+.persoonblok2{
+   margin-left: 700px;
+   float: left;
+   margin-top: -205px;
+   background-color: var(--blok-paars);
+   width: 200px;
+   border: 2px var(--blok-paars);
+   border-radius: 15px;
+   padding: 13px 120px;
+}
+.persoonblok3{
+   margin-left: 1200px;
+   float: left;
+   margin-top: -205px;
+   background-color: var(--blok-paars);
+   width: 200px;
+   border: 2px  var(--blok-paars);
+   border-radius: 15px;
+   padding: 13px 120px;
+}
+.persoonblok4{
+   margin-left: 1700px;
+   float: left;
+   margin-top: -205px;
+   background-color: var(--blok-paars);
+   width: 200px;
+   border: 2px  var(--blok-paars);
+   border-radius: 15px;
+   padding: 13px 120px;
+
+}
+.fotopersoon img{
+   border-radius: 50%;
+   width: 165px;
+   height: 165px;
+   float: left;
+   margin-left: -80px;
+}
+
+.infopersoon{
+   float: left;
+   margin-top: 7%;
+   margin-left: 15%;
+}
+
+.emailbalkje{
+   width: 118px;
+   height: 40px;
+   background-color: var(--roze-naar-lichtblauw);
+   border-radius: 10px;
+   display: block;
+   font-family: 'Montserrat', sans-serif;
+   font-size:18px ;
+   font-weight: bold;
+   color: #ffffff;
+   margin-top: 25px;
+   margin-left: 120px;
+   z-index: 5;
+   border: none;
+}
+
+.namen{
+   color:var( --donker-roze);
+   font-family: 'Montserrat', sans-serif;
+   font-size:18px ;
+   font-weight: bold;
+   margin-left: 115px;
+   margin-top: -140px;
+}
+
+.functietekst{
+   color:var(--licht-roze);
+   font-family: 'Montserrat', sans-serif;
+   font-size:18px ;
+   font-weight: bold;
+   margin-left: 115px;
+   margin-top: 11px;
+}
+div.scrollmenu {
+   overflow: auto;
+   white-space: nowrap;
+   padding-top: 250px;
+ }
+
+
+
+ 
+ /* Modal */
+ .modal-content {
+   background-color: var(--donker-roze);
+   padding: 20px;
+   border-radius: 30px;
+   border-width: 10px;
+   border-style: solid;
+   border-color: var(--wit-naar-blauw);
+ }
+
+
+ .modal {
+   display: none;
+   position: fixed; 
+   z-index: 16; 
+   left: 0;
+   top: 0;
+   width: 470px; 
+   height: 420px; 
+   overflow: auto; 
+   transform: translate(-50%,-50%);
+   text-align: center;
+   top: 50%;
+   left:50%;
+   padding: 50px;
+
+
+ }
+
+ .ml6 {
+   position: relative;
+   font-weight: 900;
+   font-size: 3.3em;
+   color: black;
+ }
+ 
+ .ml6 .text-wrapper {
+   position: relative;
+   display: inline-block;
+   padding-top: 0.2em;
+   padding-right: 0.05em;
+   padding-bottom: 0.1em;
+   overflow: hidden;
+ }
+ 
+ .ml6 .letter {
+   display: inline-block;
+   line-height: 1em;
+   text-align: center;
+   text-decoration-color: black;
+   z-index: 10;
+ }
+
+
+
+ /*footer*/
+
+footer {
+   position: relative;
+   text-align: center;
+   color: #ffffff;
+   width: 100%;
+}
+
+#ftekst h2{
+   font-family: 'Playfair Display', serif;
+   font-size:60px ;
+   font-weight: bold;
+}
+#ftekst  p{
+   font-family: 'Montserrat', sans-serif;
+   font-size:22px ;
+   font-weight: 200;
+   padding-top: 50px;
+}
+#ftekst  {
+   height: 450px;
+   width: 100%;
+   background: linear-gradient(to right,var( --lichtroze-doorschijnend), var(--donkerkleur-doorschijnend)), url(../img/footer@2x.jpg);
+   background-size: cover;
+   color: #ffffff;
+   margin-top: 130px;
+   padding-top: 100px;
+}
+
+#balkjetext{
+   font-family: 'Montserrat', sans-serif;
+   font-size:22px ;
+   color: var( --donker-roze);
+   font-weight: bold;
+   margin: 100px;
+   margin-top: 50px;
+   background-color: var(--blok-paars);
+   padding: 20px 50px;
+   border-radius: 10px;
+   border: none;
+}
+
+
+
+/*responsive*/
+
+ @media only screen and (max-width: 1300px) {
+   nav {
+      height: 110px;
+    }
+    
+    ul {
+      margin-top: 15px;
+    }
+   
+   
+    li {
+      display: inline;
+      margin-left: 60px;
+      line-height: 100px;
+    }
+    
+    a {
+      font-size: 14px;
+    }
+    #logo{
+      margin-top: 25px;
+   }
+   .titel{
+      font-size: 40px;
+   }
+   
+   .inleiding{
+      font-size: 18px;
+   }
+   .header-img{
+      height:800px;
+   }
+   .img1{
+      padding: 50px;
+      margin-left: 16%;
+   }
+   .img2{
+      padding: 50px;
+      margin-left: 41%;
+   }
+   .img3{  
+      padding: 50px;
+      margin-left: 66%;
+   
+   }
+   .teksten{
+      font-size: 18px;
+   
+   }
+   .tekstblok1{
+      margin-top: 120px;
+      margin-left: 26%;
+   }
+   .tekstblok2{
+      margin-top: -25px;
+      margin-left: 49%;
+   }
+   .tekstblok3{
+      margin-top: -25px;
+      margin-left: 76%;
+   }
+   
+   #ftekst h2{
+      font-size:40px ;
+   }
+   #ftekst  p{
+      font-family: 'Montserrat', sans-serif;
+      font-size:20px ;
+      font-weight: 200;
+      padding-top: 30px;
+   }
+   #ftekst  {
+      height: 300px;
+      padding-top: 80px;
+   }
+   
+   #balkjetext{
+      font-size:18px ;
+      margin: 0px;
+      margin-top: 30px;
+   }
+   .support{
+      font-size: 16px;
+   }
+   
+   .studentstext{
+      font-size: 18px;
+      max-width: 400px;
+   
+   }
+   #contactbalk{
+    padding: 20px 50px;
+   }
+
+   .persoonblok1{
+      margin-top: -205px;
+   width: 180px;
+   padding: 0px 90px;
+   }
+   .persoonblok2{
+      margin-left: 600px;
+      width: 180px;
+      padding: 0px 90px;
+   }
+   .persoonblok3{
+      margin-left: 1000px;
+      width: 180px;
+      padding: 0px 90px;
+   }
+   .persoonblok4{
+      margin-left: 1400px;
+      width: 180px;
+      padding: 0px 90px;
+   
+   }
+   .fotopersoon img{
+      width: 130px;
+      height: 130px;
+      margin-top: 20px;
+   }
+   
+   .infopersoon{
+      float: left;
+      margin-top: 10%;
+      margin-left: 5%;
+   }
+   
+   .emailbalkje{
+      width: 100px;
+      height: 40px;
+      margin-top: 15px;
+      margin-left: 100px;
+   }
+   
+   .namen{
+      font-size:16px ;
+      margin-left: 90px;
+      margin-top: -140px;
+   }
+   
+   .functietekst{
+      font-size:15px ;
+      margin-left: 95px;
+      margin-top: 7px;
+   }
+   
+ } 
+
+
+
+ @media only screen and (max-width: 1215px) {
+   nav {
+      height: 100px;
+    }
+    
+    ul {
+      margin-top: 10px;
+    }
+   
+   
+    li {
+      margin-left: 40px;
+    }
+    
+    a {
+      font-size: 12px;
+    }
+    #logo{
+      margin-top: 30px;
+      width: 50px;
+      height: 50px;
+      margin-left: 150px;
+
+   }
+   .titel{
+      font-size: 40px;
+      top: 350px;
+   }
+   
+   .inleiding{
+      font-size: 18px;
+   }
+   .header-img{
+      height:700px;
+   }
+   .switcher {
+      width: 60px;
+      height: 30px;
+      margin-top: 0px;
+      position: relative;
+   }
+   
+   .switcher:before {
+      content: none;
+   }
+   .switcher:after {
+      content: none;
+   }
+   
+   .switcher label {
+      width: 25px;
+      height: 25px;
+      top: 3px;
+      margin-left: 3px;
+   }
+   
+   .switcher input[type=checkbox]:checked+label {
+      left: 30px;
+   }
+   .titel{
+      font-size: 40px;
+   }
+   
+   .inleiding{
+      font-size: 18px;
+   }
+
+   .img1{
+      padding: 50px;
+      margin-left: 16%;
+      width:150px;
+      margin-top: -2%;
+      
+   }
+   #lamp{
+      width: 100px;
+      height: 100px;
+      margin-left: 15px;
+   }
+   .img2{
+      padding: 50px;
+      margin-left: 41%;
+      width:150px;
+      margin-top: -2%;
+   }
+   #lamp1{
+      width: 100px;
+      height: 100px;
+      margin-left: 15px;
+   }
+   .img3{  
+      padding: 50px;
+      margin-left: 66%;
+      width:150px;
+      margin-top: -2%;
+   
+   }
+   #lamp2{
+      width: 100px;
+      height: 100px;
+      margin-left: 15px;
+   }
+   .teksten{
+      font-size: 16px;
+   
+   }
+   .tekstblok1{
+      margin-top: 140px;
+      margin-left: 25%;
+   }
+   .tekstblok2{
+      margin-top: -25px;
+      margin-left: 49%;
+   }
+   .tekstblok3{
+      margin-top: -25px;
+      margin-left: 74%;
+   }
+   .video-js{
+      width:89.5%;
+      height:400px;
+      position: relative;
+    } 
+    .btn {
+      margin-top: 18%;
+      left: 58%;
+       }
+   
+    .achteruit{
+      margin-top: 14%;
+      left: calc(58% - 150px);
+   }
+   
+    .vooruit{
+      margin-top: 14%;
+      left: calc(58% + 60px);
+   }
+
+#accordion h3{
+   font-size:15px ;
+   padding-left: 85px;
+}
+.Playlist{
+   font-size: 16px;
+}
+   
+ } 
+ @media only screen and (max-width: 1100px) {
+   .video-js{
+      width:92%;
+    } 
+ }
+
+ @media only screen and (max-width: 1000px) {
+   nav {
+      height: 100px;
+      width:105%;
+      margin-left:0px;
+      margin-top: 200px;
+      border-radius: 0%;
+    }
+    
+    ul {
+      margin-top: 50px;
+      left:50%
+    }
+   
+   
+    li {
+      margin-left: 10px;
+      line-height: 30px;
+    }
+    
+    a {
+      font-size: 12px;
+    }
+    #logo{
+      margin-top: 30px;
+      width: 50px;
+      height: 50px;
+      margin-left: 45px;
+
+   }
+
+   .header-img{
+      height:700px;
+   }
+   .switcher {
+      width: 60px;
+      height: 30px;
+      margin-top: 0px;
+      position: absolute;
+      margin-left: 98%;
+
+   }
+
+    .titel{
+      font-size: 30px;
+      top: 350px;
+      margin-left: 20%;
+   }
+   
+   .inleiding{
+      font-size: 15px;
+      max-width: 600px;
+   }
+
+   .img1{
+      padding: 30px 20px;
+      margin-left: 10%;
+      width:150px;
+      margin-top: -2%;
+      
+   }
+
+   .img2{
+      padding: 30px 20px;
+      margin-left: 43%;
+      width:150px;
+      margin-top: -2%;
+   }
+
+   .img3{  
+      padding: 30px 20px;
+      margin-left: 75%;
+      width:150px;
+      margin-top: -2%;
+   
+   }
+
+   .teksten{
+      font-size: 16px;
+   
+   }
+   .tekstblok1{
+      margin-top: 120px;
+      margin-left: 17%;
+   }
+   .tekstblok2{
+      margin-top: -25px;
+      margin-left: 49%;
+   }
+   .tekstblok3{
+      margin-top: -25px;
+      margin-left: 82%;
+   }
+   .video-js{
+      width:89.5%;
+      height:400px;
+      position: relative;
+    } 
+    .Playlist{
+       margin-left: 15%;
+    }
+    .btn {
+      margin-top: 20%;
+      left: 50%;
+       }
+   
+    .achteruit{
+      margin-top: 14%;
+      left: calc(50% - 150px);
+   }
+   
+    .vooruit{
+      margin-top: 14%;
+      left: calc(50% + 60px);
+   }
+   #accordion{
+      padding: 30px 30px 80px;
+      stroke: 1px solid var( --zwart);
+      max-width: 100%;
+      margin-left: 8%;
+   
+   }
+
+#accordion h3{
+   font-size:15px ;
+   padding-left: 85px;
+   line-height: 50px;
+}
+.Playlist{
+   font-size: 16px;
+}
+.ui-accordion-header{
+   height: 50px;
+
+   background-size: 30px;
+   }
+   .ui-accordion-header-active {
+
+      height: 50px;
+
+      background-size: 30px;
+ 
+    }  
+    .support{
+      font-size: 16px;
+      margin-left: 41%;
+      margin-top: -10px;
+   }
+   
+   .studentstext{
+      font-size: 16px;
+      margin-left: 22%;
+      text-align: center;
+   }
+   #contactbalk{
+      font-size:14px ;
+      margin-left: 34%;
+      margin-top: 0px;
+      padding: 20px 40px;
+      border-radius: 15px;
+   }
+   .persoonblok1{
+      margin-top: -205px;
+   width: 110px;
+   padding: 0px 90px;
+   }
+   .persoonblok2{
+      margin-left: 600px;
+      width: 110px;
+      padding: 0px 90px;
+   }
+   .persoonblok3{
+      margin-left: 1000px;
+      width: 110px;
+      padding: 0px 90px;
+   }
+   .persoonblok4{
+      margin-left: 1400px;
+      width: 110px;
+      padding: 0px 90px;
+   
+   }
+   .fotopersoon img{
+      width: 90px;
+      height: 90px;
+      margin-top: 20px;
+   }
+   
+   .infopersoon{
+      float: left;
+      margin-top: 10%;
+      margin-left: 5%;
+   }
+   
+   .emailbalkje{
+      width: 80px;
+      height: 40px;
+      margin-top: 23px;
+      margin-left: 64px;
+      font-size: 15px;
+   }
+   
+   .namen{
+      font-size:16px ;
+      margin-left: 42px;
+      margin-top: -110px;
+   }
+   
+   .functietekst{
+      font-size:13px ;
+      margin-left: 52px;
+      margin-top: 7px;
+   }
+   
+   #ftekst h2{
+      font-size:35px ;
+   }
+   #ftekst  p{
+      font-family: 'Montserrat', sans-serif;
+      font-size:18px ;
+      font-weight: 200;
+      padding-top: 30px;
+   }
+   #ftekst  {
+      height: 300px;
+      padding-top: 40px;
+      margin-top: 20px;
+   }
+   
+   #balkjetext{
+      font-size:15px ;
+   }
+ } 
+
+
+
+ @media only screen and (max-width: 800px) {
+
+    .titel{
+      margin-left: 20%;
+   }
+   
+   .inleiding{
+      max-width: 400px;
+   }
+   .img1{
+      width: 130px;
+      padding: 60px;
+      margin: 20px;
+      margin-left: 35%;
+      margin-top: -50px;
+   }
+   .img2{
+      width: 130px;
+      padding: 60px;
+      margin-left: 35%;
+      margin-top: 200px;
+   }
+   .img3{  
+      width: 130px;
+      padding: 60px;
+      margin: 20px;
+      margin-left: 35%;
+      margin-top: 450px;
+   
+   }
+   .teksten{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      color: var( --donker-roze);
+      position: relative;
+      z-index: 4;
+   
+   }
+   .tekstblok1{
+      margin-top: 130px;
+      margin-left: 48%;
+   }
+   .tekstblok2{
+      margin-top: 220px;
+      margin-left: 46%;
+   }
+   .tekstblok3{
+      margin-top: 220px;
+      margin-left: 47%;
+   }
+   
+   .video-js{
+      width:93%;
+      height:270px;
+      position: relative;
+    } 
+
+    .support{
+      margin-left: 35%;
+   }
+   
+   .studentstext{
+      margin-left: 6%;
+   }
+   #contactbalk{
+      font-size:14px ;
+      margin-left: 24%;
+      margin-top: 0px;
+      padding: 20px 40px;
+      border-radius: 15px;
+   }
+   .persoonblok1{
+      margin-top: -205px;
+   width: 110px;
+   padding: 0px 90px;
+   }
+   .persoonblok2{
+      margin-left: 600px;
+      width: 110px;
+      padding: 0px 90px;
+   }
+   .persoonblok3{
+      margin-left: 1000px;
+      width: 110px;
+      padding: 0px 90px;
+   }
+   .persoonblok4{
+      margin-left: 1400px;
+      width: 110px;
+      padding: 0px 90px;
+   
+   }
+   .fotopersoon img{
+      width: 90px;
+      height: 90px;
+      margin-top: 20px;
+   }
+   
+   .infopersoon{
+      float: left;
+      margin-top: 10%;
+      margin-left: 5%;
+   }
+   
+   .emailbalkje{
+      width: 80px;
+      height: 40px;
+      margin-top: 23px;
+      margin-left: 64px;
+      font-size: 15px;
+   }
+   
+   .namen{
+      font-size:16px ;
+      margin-left: 42px;
+      margin-top: -110px;
+   }
+   
+   .functietekst{
+      font-size:13px ;
+      margin-left: 52px;
+      margin-top: 7px;
+   }
+   
+   #ftekst h2{
+      font-size:35px ;
+   }
+   #ftekst  p{
+      font-family: 'Montserrat', sans-serif;
+      font-size:18px ;
+      font-weight: 200;
+      padding-top: 30px;
+   }
+   #ftekst  {
+      height: 300px;
+      padding-top: 40px;
+      margin-top: 20px;
+   }
+   
+   #balkjetext{
+      font-size:15px ;
+   }
+
+
+
+ 
+ /* Modal */
+.modal {
+   width: 310px; 
+   height: 100px; 
+ }
+
+ .ml6 {
+   font-size: 2em;
+ }
+ }
+
+
+
+@media only screen and (max-width: 600px) {
+   .titel{
+      margin-left: 15%;
+      font-size: 25px;
+   }
+   
+   .inleiding{
+      max-width: 400px;
+      font-size: 13px;
+   }
+
+   .teksten{
+      font-size: 17px;
+   }
+   .tekstblok1{
+      margin-left: 53%;
+   }
+   .tekstblok2{
+      margin-left: 51%;
+   }
+   .tekstblok3{
+      margin-left: 51%;
+   }
+   
+   .switcher {
+      margin-top: 45px;
+      position: relative;
+      margin-left: 100px;
+
+   }
+   
+   #balkjetext{
+      font-size:15px ;
+      padding: 10px 30px;
+   }
+
+   .support{
+      margin-left: 30%;
+      font-size: 15px;
+   }
+   
+   .studentstext{
+      margin-left: 0%;
+      font-size: 15px;
+      max-width: 350px;
+   }
+   #contactbalk{
+      font-size:14px ;
+      margin-left: 17%;
+      margin-top: 0px;
+      padding: 13px 30px;
+      border-radius: 15px;
+   }
+   .video-js{
+      width:98%;
+    } 
+}
+
+
+
+@media only screen and (max-width: 450px) {
+   nav {
+      height: 80px;
+    }
+    
+    ul {
+      margin-top: 10px;
+      left: 17%;
+      position: absolute;
+    }
+   
+   
+    li {
+      margin-left: 10px;
+    }
+    
+    a {
+      font-size: 10px;
+      margin-left: 10px;
+    }
+    #logo{
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+      margin-left: 30px;
+
+   }
+   .titel{
+      font-size: 21px;
+   }
+   
+   .inleiding{
+      font-size: 15=2px;
+      max-width: 300px;
+      margin-top: 5px;
+   }
+   .header-img{
+      height:600px;
+   }
+   .switcher {
+      width: 40px;
+      height: 20px;
+      margin-top: 15px;
+      margin-left: 5%;
+      left: -115px;
+   }
+   .switcher label {
+      width: 15px;
+      height: 15px;
+      top: 3px;
+      margin-left: 3px;
+   }
+   .img1{
+      width: 100px;
+      padding: 40px;
+      margin: 20px;
+      margin-left: 30%;
+      margin-top: -20px;
+   }
+   .img2{
+      width: 100px;
+      padding: 40px;
+      margin-left: 30%;
+      margin-top: 200px;
+   }
+   .img3{  
+      width: 100px;
+      padding: 40px;
+      margin: 20px;
+      margin-left: 30%;
+      margin-top: 450px;
+   
+   }
+   .teksten{
+      font-size: 17px;
+   
+   }
+   .tekstblok1{
+      margin-top: 130px;
+      margin-left: 48%;
+   }
+   .tekstblok2{
+      margin-top: 200px;
+      margin-left: 46%;
+   }
+   .tekstblok3{
+      margin-top: 230px;
+      margin-left: 47%;
+   }
+   .video-js{
+      width:104.5%;
+      height:180px;
+      position: relative;
+    } 
+    .btn {
+      margin-top: 19%;
+      left: 55%;
+       }
+   
+    .achteruit{
+      margin-top: 10%;
+      left: calc(55% - 150px);
+   }
+   
+    .vooruit{
+      margin-top: 10%;
+      left: calc(55% + 60px);
+   }
+
+#accordion h3{
+   font-size:12px ;
+   padding-left: 85px;
+}
+#accordion{
+   padding: 30px 30px 80px;
+   stroke: 1px solid var( --zwart);
+   max-width: 100%;
+   margin-left: 0%;
+
+}
+.Playlist{
+   font-size: 16px;
+}
+   
+.support{
+   margin-left: 30%;
+   font-size: 15px;
+}
+
+.studentstext{
+   margin-left: -9%;
+   font-size: 15px;
+   max-width: 350px;
+}
+#contactbalk{
+   font-size:14px ;
+   margin-left: 17%;
+   margin-top: 0px;
+   padding: 13px 30px;
+   border-radius: 15px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 380px) {
+   nav {
+      height: 80px;
+    }
+    
+    ul {
+      margin-top: 10px;
+      left: 20%;
+      position: absolute;
+    }
+   
+   
+    li {
+      margin-left: 10px;
+    }
+    
+    a {
+      font-size: 8px;
+      margin-left: 10px;
+    }
+    #logo{
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+      margin-left: 30px;
+
+   }
+   .titel{
+      font-size: 21px;
+   }
+   
+   .inleiding{
+      font-size: 10px;
+      max-width: 250px;
+      margin-top: 5px;
+   }
+   .header-img{
+      height:600px;
+   }
+   .switcher {
+      width: 40px;
+      height: 20px;
+      margin-top: 15px;
+      margin-left: 20%;
+      left: -90px;
+   }
+   .switcher label {
+      width: 15px;
+      height: 15px;
+      top: 3px;
+      margin-left: 3px;
+   }
+   .img1{
+      width: 100px;
+      padding: 40px;
+      margin: 20px;
+      margin-left: 30%;
+      margin-top: -20px;
+   }
+   .img2{
+      width: 100px;
+      padding: 40px;
+      margin-left: 30%;
+      margin-top: 200px;
+   }
+   .img3{  
+      width: 100px;
+      padding: 40px;
+      margin: 20px;
+      margin-left: 30%;
+      margin-top: 450px;
+   
+   }
+   .teksten{
+      font-size: 17px;
+   
+   }
+   .tekstblok1{
+      margin-top: 130px;
+      margin-left: 48%;
+   }
+   .tekstblok2{
+      margin-top: 200px;
+      margin-left: 46%;
+   }
+   .tekstblok3{
+      margin-top: 230px;
+      margin-left: 47%;
+   }
+   .video-js{
+      width:106.5%;
+      height:180px;
+      position: relative;
+    } 
+    .btn {
+      margin-top: 19%;
+      left: 55%;
+       }
+   
+    .achteruit{
+      margin-top: 10%;
+      left: calc(55% - 150px);
+   }
+   
+    .vooruit{
+      margin-top: 10%;
+      left: calc(55% + 60px);
+   }
+
+#accordion h3{
+   font-size:12px ;
+   padding-left: 85px;
+}
+#accordion{
+   padding: 30px 30px 80px;
+   max-width: 100%;
+   margin-left: -7%;
+
+}
+.Playlist{
+   font-size: 16px;
+}
+   
+.support{
+   margin-left: 28%;
+   font-size: 15px;
+}
+
+.studentstext{
+   margin-left: -12%;
+   font-size: 15px;
+   max-width: 300px;
+}
+#contactbalk{
+   font-size:14px ;
+   margin-left: 12%;
+   margin-top: 0px;
+   padding: 13px 30px;
+   border-radius: 15px;
+}
+#ftekst h2{
+   font-size:28px ;
+}
+#ftekst  p{
+   font-size:15px ;
+   font-weight: 200;
+   padding-top: 30px;
+}
+#ftekst  {
+   height: 300px;
+   padding-top: 80px;
+}
+}
+
